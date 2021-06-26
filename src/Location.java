@@ -12,15 +12,7 @@ public abstract class Location {
 
     public abstract boolean getLocationFeature(Player player);
 
-    public int whoIsFirst() {
-        Random rand = new Random();
-        int first = rand.nextInt(8);
-        if (first>4) {
-            return 1;
-        } else {
-            return 0;
-        }
-    }
+    
 
     public Player getPlayer() {
         return player;
