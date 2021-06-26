@@ -10,6 +10,16 @@ public abstract class BattleLoc extends Location {
         this.award = award;
         this.name = name;
     }
+    
+    public int whoIsFirst() {
+        Random rand = new Random();
+        int first = rand.nextInt(8);
+        if (first>4) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 
     @Override
     public boolean getLocationFeature(Player player) {
